@@ -54,13 +54,13 @@ module.exports = {
 				console.error(error);
 			}
 
-			// if I do:
+			// if I hardcode the follow-up message:
 
 			// res = await api.sendMessage('follow-up message', {
 			// 	parentMessageId: res.id
 			// });
 
-			// it will work just fine, using the previous id and referencing it to generate a relevant response
+			// it will work just fine, using the previous id and referencing it to generate a relevant response. this can go for as much as I can, as long as it's hard coded
 			
 		} else {
 			const previousContext = await db.get(`${m.author.id}-testContext`);
