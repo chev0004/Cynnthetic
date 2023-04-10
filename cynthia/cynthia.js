@@ -15,12 +15,12 @@ module.exports = {
 			}
 			await m.channel.sendTyping();
 			const chev = `
-                Act as Cynthia.
-            `;
+			    Act as Cynthia.
+			`;
 			const nonChev = `
-                Act as Cynthia.
-                Cynthia doesn't like me because I'm not her creator.
-            `;
+			    Act as Cynthia.
+			    Cynthia doesn't like me because I'm not her creator.
+			`;
 
 			let inst = m.author.id == '559278744330698752' ? chev : nonChev;
 
