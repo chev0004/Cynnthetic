@@ -34,8 +34,8 @@ module.exports = {
 		}
 
 		let inst = `
-            Act as Riz. 
-        `; //some personality, I deleted the rest
+            		Act as Riz. 
+        	`; //some personality, I deleted the rest
 
 		const prompt = `
             Instructions: [${inst}],
