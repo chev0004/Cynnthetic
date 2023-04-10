@@ -38,9 +38,9 @@ module.exports = {
         	`; //some personality, I deleted the rest
 
 		const prompt = `
-            Instructions: [${inst}],
-            Prompt: [${args}],
-        `;
+            		Instructions: [${inst}],
+            		Prompt: [${args}],
+        	`;
 
 		if (previousContext == '') {
 			let res = await api.sendMessage(prompt);
