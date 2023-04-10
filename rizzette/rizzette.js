@@ -16,7 +16,7 @@ module.exports = {
 			await m.channel.sendTyping();
 			let inst = `
 				Act as Riz.
-            `;
+            		`;
 
 			function decapitalize(str) {
 				if (str.startsWith('"') && str.endsWith('"')) {
