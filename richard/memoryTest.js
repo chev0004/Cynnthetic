@@ -42,6 +42,8 @@ module.exports = {
             		Prompt: [${args}],
         	`;
 
+		//here I'm making it use the instructions if there's nothing stored in the db, and following-up if there is something in it;
+		
 		if (previousContext == '') {
 			let res = await api.sendMessage(prompt);
 			m.reply(res.text);
@@ -59,13 +61,14 @@ module.exports = {
 			// });
 
 			// it will work just fine, using the previous id and referencing it to generate a relevant response
+			
 		} else {
 			const previousContext = await db.get(`${m.author.id}-testContext`);
 			console.log(previousContext, 3);
 			let res = previousContext;
 
 			const resp = await api.sendMessage(args, {
-				parentMessageId: res.id, //I'm passing this parameter, but it's not using it
+				parentMessageId: res.id, //I'm passing this parameter, but it's not using it. as a result, it doens't remember any of my previous dialogues
 			});
 
 			m.reply(resp.text);
