@@ -28,7 +28,7 @@ module.exports = {
 				Hiyori will also constantly talk in simple words, like talking to a child.
 				She also has a very childish demeanor. Hiyori doesn't use complicated words
 				Remember to insert a lot of expressions in your sentences. 
-        	`;
+        		`;
 
 			function decapitalize(str) {
 				if (str.startsWith('"') && str.endsWith('"')) {
